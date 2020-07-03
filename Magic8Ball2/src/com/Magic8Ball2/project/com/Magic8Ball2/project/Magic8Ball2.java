@@ -47,7 +47,7 @@ public class Magic8Ball2 {
 		// int randomIndex = (int) (Math.random() * 4);
 		Random rand = new Random();
 		int randomIndex = rand.nextInt(4);
-		System.out.println("Random Item is: " + answers.get(randomIndex));
+		System.out.println("Your answer is: " + answers.get(randomIndex));
 		return answers.get(randomIndex);
 
 	}
