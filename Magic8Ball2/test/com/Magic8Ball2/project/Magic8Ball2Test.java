@@ -17,7 +17,6 @@ class Magic8Ball2Test {
 	static void setUpBeforeClass() throws Exception {
 		m8b2 = new Magic8Ball2();//class under test
 	}
-	private String choice;
 
 	@Test
 	@Order(1)
