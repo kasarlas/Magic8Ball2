@@ -17,6 +17,7 @@ class Magic8Ball2Test {
 	static void setUpBeforeClass() throws Exception {
 		m8b2 = new Magic8Ball2();//class under test
 	}
+	private String choice;
 
 	@Test
 	@Order(1)
@@ -39,7 +40,8 @@ class Magic8Ball2Test {
 	void shake_GivenNoParamters_ShouldReturnAnswer() {
 		String answer =null;
 		answer = m8b2.shake();
-		assertEquals("ask again later.", answer);
+		assertNotNull(answer);
+	
 		
 	}
 	
